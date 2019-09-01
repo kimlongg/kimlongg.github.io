@@ -65,9 +65,9 @@
         </div>
         <div class="p-3 border">
           <h3 class="text-uppercase text-primary">Chủ đề giải trí</h3>
-          <b>- Share link: </b>80.000đ<br>
-          <b>- Ghim bài:</b><br>
-          <b>- Post ảnh và video:</b><br>
+          <b>- Share bài: </b>80.000đ/bài<br>
+          <b>- Ghim bài: </b>500.000đ/tuần<br>
+          <b>- Post ảnh và video: </b>400.000/bài<br>
         </div>
       </div>
 
@@ -80,9 +80,9 @@
         </div>
         <div class="p-3 border">
           <h3 class="text-uppercase text-primary">Chủ đề giải trí</h3>
-          <b>- Share link: </b>80.000đ<br>
-          <b>- Ghim bài:</b><br>
-          <b>- Post ảnh và video:</b><br>
+          <b>- Share bài: </b>140.000đ<br>
+          <b>- Ghim bài: </b>600.000/tuần<br>
+          <b>- Post ảnh và video: </b>500.000/bài<br>
         </div>
       </div>
 
@@ -95,9 +95,9 @@
         </div>
         <div class="p-3 border">
           <h3 class="text-uppercase text-primary">Chủ đề giải trí</h3>
-          <b>- Share link: </b>80.000đ<br>
-          <b>- Ghim bài:</b><br>
-          <b>- Post ảnh và video:</b><br>
+          <b>- Share link: </b>20.000đ<br>
+          <b>- Ghim bài: </b>100.000/tuần<br>
+          <b>- Post ảnh và video: </b>80.000/bài<br>
         </div>
       </div>
       <div class="row">
@@ -127,6 +127,29 @@
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous"
     src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v4.0"></script>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v4.0'
+        });
+      };
+
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+      attribution=setup_tool
+      page_id="111324463578449">
+    </div>
 </body>
 
 </html>
