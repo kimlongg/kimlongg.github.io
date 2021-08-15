@@ -1,7 +1,23 @@
 body {
     background-color: black;
 }
-.container {
+.nenxanh {
+    /* background: blue; */
+    width: 100%;
+}
+.nenvang {
+    /* background: yellow; */
+    width: 100%;
+}
+.playphim {
+    /* background:chocolate; */
+    width: 100%;
+}
+.trailer {
+    /* background: rgb(116, 124, 139); */
+    width: 100%;
+}
+/* .container {
     display: flex;
     justify-content: center;
-}
+} */
