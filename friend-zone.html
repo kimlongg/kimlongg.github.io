@@ -1,0 +1,48 @@
+<head>
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+<style>
+	#myvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #000;
+}
+video::cue {
+     background: inherit;
+     text-shadow:
+   -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+     2px 2px 0 #000;
+   }
+</style>
+</head>
+<body>
+<div style="text-align:center">
+  <video
+    id="myvideo"
+    class="video-js"
+    controls
+    preload="auto"
+    width="840"
+    height="464"
+    poster="MY_VIDEO_POSTER.jpg"
+    data-setup="{}"
+  >
+    <source src="https://onedrive.live.com/download?cid=1A823351EF000D05&resid=1A823351EF000D05%2112184&authkey=ADriD1sKuYVAFNA" type="video/mp4" />
+    <source src="https://onedrive.live.com/download?cid=1A823351EF000D05&resid=1A823351EF000D05%2112184&authkey=ADriD1sKuYVAFNA" type="video/webm" />
+	<track kind='subtitles' src='sub/friend-zone.vtt' srclang='vn' label='VietNam' default />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+</div>
+</body>
