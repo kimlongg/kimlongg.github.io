@@ -1,15 +1,14 @@
 <head>
+	<title>Friend Zone</title>
 
   <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
   <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
 <style>
 	#myvideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  background-color: #000;
+	  position: fixed;
+	  max-width: 100%;
+    height: auto;
+	  background-color: #000;
 }
 video::cue {
      background: inherit;
@@ -22,14 +21,12 @@ video::cue {
 </style>
 </head>
 <body>
-<div style="text-align:center">
+<div class="container">
   <video
     id="myvideo"
     class="video-js"
     controls
     preload="auto"
-    width="840"
-    height="464"
     poster="MY_VIDEO_POSTER.jpg"
     data-setup="{}"
   >
