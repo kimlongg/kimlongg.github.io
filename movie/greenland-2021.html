@@ -59,7 +59,11 @@
 
         <div class="row">
           <div class="trailer"><h2 class="text-primary text-center">BÌNH LUẬN</h2></div>
-          <div class="fb-comments" data-href="https://kimlongg.github.io/movie/greenland-2021.html" data-width="100%" data-numposts="10"></div>
+            <div id="comments"></div>
+          <script>
+              document.getElementById("comments").innerHTML = '<div class"fb-comments" data-href="'+window.location.href+'" data-width="100%" data-numposts="10"></div>';
+          </script>
+          <!-- <div class="fb-comments" data-href="https://kimlongg.github.io/movie/greenland-2021.html" data-width="100%" data-numposts="10"></div> -->
         </div>
 
         <div class="row">
