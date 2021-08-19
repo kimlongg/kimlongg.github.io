@@ -1,0 +1,1 @@
+document.getElementById("comments").innerHTML = '<div class="fb-comments" data-href="'+window.location.href+'" data-width="100%" data-numposts="10"></div>';
